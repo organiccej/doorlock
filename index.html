@@ -922,6 +922,7 @@
           <h3>📍 자주 찾으시는 동네별 비디오폰 연동 · 도어락 시공 바로가기</h3>
           <nav aria-label="동네별 SEO 직통 링크" class="chip-wrap">
             <!-- 망우·면목·중랑구 전용 페이지(mangu.html) 직접 연결 링크 -->
+            <a class="region-chip" href="hanam.html" style="border-color:#1d4ed8; color:#1d4ed8; background:#eff6ff;">📍 하남 덕풍·신장·창우·미사 인터폰·비디오폰 설치 수리</a>
             <a class="region-chip" href="mangu.html" style="border-color:#e11d48; color:#e11d48; background:#fff1f2;">📍 망우·면목·중랑구 비디오폰 교체·코맥스 77MG 연동</a>
             <a class="region-chip" data-region="구리 수택동" href="?region=구리%20수택동">수택동 비디오폰 연동</a>
             <a class="region-chip" data-region="구리 인창동" href="?region=구리%20인창동">인창동 비디오폰 연동</a>
@@ -963,7 +964,19 @@
 
   <!-- 포트폴리오 데이터 렌더링 + 지역명 동적 변환 스크립트 -->
   <script>
-    const PORTFOLIO_DATA = [
+    const PORTFOLIO_DATA = 
+      {
+     category: "interlock",
+     categoryName: "인터폰·비디오폰 설치 수리",
+     region: "하남 덕풍·신장·창우동",
+     title: "하남 덕풍동·신장동 비디오폰 아닌 구형 음성 인터폰 교체 및 1층 공동현관 호출 복구",
+     image: "assets/hanam_step3_after.jpg",
+     beforeInfo: "단종된 구형 음성 수화기형 인터폰 노후로 통화 불량 및 1층 공동현관 문열림 작동 불가",
+     workInfo: "전용 마감판 + 아날로그 2선·4선 배선 호환 신형 인터폰·비디오폰 교체 설치 완료",
+     checkTip: "하남 10개 동(덕풍·신장·천현·창우·풍산·망월·미사·감일·감북·학암동) 구형 인터폰 맞춤 교체 (상세: hanam.html)",
+     detailUrl: "hanam.html"
+   },
+      [
       {
         category: "interlock",
         categoryName: "비디오폰 교체·월패드 연동",
