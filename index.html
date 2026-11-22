@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>도어마스터 | 수택동·인창동 비디오폰 연동 · 도어락 교체 · 무파손 개문 전문</title>
-  <meta name="description" content="구리 수택동·인창동·갈매동·토평동·중랑구 망우동·면목동·상봉동·하남 덕풍동·신장동·남양주·서울·경기 출장! 구형 비디오폰·인터폰 교체 및 도어락 무선 문열림 연동, 코맥스 480·77MG 호환, 삼성·직방·게이트맨·솔리티 무파손 개문, 슬라이드 자동문 번호키 실제 시공 사례와 투명 견적을 확인하세요. 010-7724-5425" />
-  <meta name="keywords" content="도어마스터, 서울경기월패드, 수택동 비디오폰 연동, 인창동 비디오폰 연동, 토평동 비디오폰 연동, 갈매동 비디오폰 연동, 교문동 도어락 교체, 망우 비디오폰 교체 수리, 면목 비디오폰 교체 수리, 상봉동 비디오폰 교체, 가야써니빌 비디오폰, 중랑구 비디오폰 교체 수리, 코맥스 480 시리즈 호환, 코맥스 77MG, 하남 인터폰 비디오폰 설치 수리, 덕풍동 인터폰 교체, 신장동 인터폰 비디오폰, 다산동 비디오폰 연동, 별내동 도어락 교체, 비디오폰 교체, 월패드 문열림 연동, 도어락 무파손 개문, 삼성 도어락 개문, 직방 게이트맨 솔리티, 슬라이드 자동문 번호키" />
+  <title>도어마스터 | 수택동·인창동 비디오폰 연동 · 도어락 교체 · 가야써니빌 · 무파손 개문</title>
+  <meta name="description" content="구리 수택동·인창동·갈매동·토평동·면목·망우 가야써니빌·중랑구·하남 덕풍동·신장동·남양주·의정부 출장! 구형 비디오폰 교체 및 도어락 무선 문열림 연동, 코맥스 480·77MG 호환, 삼성·직방·게이트맨·솔리티 무파손 개문, 슬라이드 자동문 번호키 실제 시공 사례와 30초 간편 견적. 010-7724-5425" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
   <link rel="canonical" href="https://organiccej.github.io/doorlock/" />
 
   <meta name="image" content="https://organiccej.github.io/doorlock/assets/doorlock_after.jpg" />
@@ -13,7 +13,7 @@
   <meta property="og:locale" content="ko_KR" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="수택동·인창동 비디오폰 연동 & 도어락 교체 실제 시공 사례 | 도어마스터" />
-  <meta property="og:description" content="구형 인터폰 배선 개조, 전용 마감판 시공, 도어락 무선 문열림 연동부터 무파손 개문까지. 현장 실제 시공 포트폴리오와 견적을 확인하세요." />
+  <meta property="og:description" content="구형 인터폰 배선 개조, 전용 마감판 시공, 도어락 무선 문열림 연동부터 무파손 개문까지. 현장 실제 시공 포트폴리오와 30초 간편 견적을 확인하세요." />
   <meta property="og:url" content="https://organiccej.github.io/doorlock/" />
   <meta property="og:image" content="https://organiccej.github.io/doorlock/assets/doorlock_after.jpg" />
   <meta property="og:image:secure_url" content="https://organiccej.github.io/doorlock/assets/doorlock_after.jpg" />
@@ -24,7 +24,7 @@
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="수택동·인창동 비디오폰 연동 & 도어락 교체 | 도어마스터" />
-  <meta name="twitter:description" content="현장 사진 한 장이면 우리 집 호환 모델과 출장비 포함 견적을 바로 안내해 드립니다." />
+  <meta name="twitter:description" content="실제 시공 사례 확인 후 30초 간편 견적 또는 사진 한 장으로 출장비 포함 확정 견적을 안내해 드립니다." />
   <meta name="twitter:image" content="https://organiccej.github.io/doorlock/assets/doorlock_after.jpg" />
 
   <style>
@@ -77,7 +77,26 @@
     .sec-title { font-size:clamp(1.35rem,2.8vw,1.85rem); font-weight:900; color:var(--navy); margin:0 0 10px; letter-spacing:-0.02em; }
     .sec-sub { font-size:0.98rem; color:var(--muted); margin:0; }
 
-    /* 간편 견적 바로가기 폼 스타일 */
+    /* 포트폴리오 카드 */
+    .filter-bar { display:flex; flex-wrap:wrap; justify-content:center; gap:8px; margin-bottom:24px; }
+    .filter-btn { background:#fff; border:1px solid #d1d5db; color:#374151; padding:8px 16px; border-radius:999px; font-size:0.88rem; font-weight:700; cursor:pointer; transition:all 0.15s; }
+    .filter-btn.active, .filter-btn:hover { background:var(--navy); color:#fff; border-color:var(--navy); }
+    .portfolio-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(310px,1fr)); gap:20px; }
+    .pf-card { background:var(--white); border:1px solid var(--border); border-radius:14px; overflow:hidden; display:flex; flex-direction:column; justify-content:space-between; box-shadow:0 4px 12px rgba(15,23,42,0.03); }
+    .pf-img { position:relative; height:205px; background:#f1f5f9; }
+    .pf-img img { width:100%; height:100%; object-fit:cover; }
+    .pf-region-tag { position:absolute; top:12px; left:12px; background:var(--region-red); color:#fff; font-size:0.78rem; font-weight:800; padding:4px 10px; border-radius:6px; }
+    .pf-cat-tag { position:absolute; top:12px; right:12px; background:rgba(15,23,42,0.82); color:#fff; font-size:0.75rem; font-weight:700; padding:4px 9px; border-radius:6px; }
+    .pf-body { padding:18px 20px; }
+    .pf-title { font-size:1.08rem; font-weight:800; color:var(--navy); margin:0 0 10px; line-height:1.4; }
+    .pf-spec-box { background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:10px 12px; font-size:0.85rem; color:#334155; margin-bottom:10px; }
+    .pf-spec-box div { margin-bottom:4px; }
+    .pf-spec-box div:last-child { margin-bottom:0; }
+    .pf-note { font-size:0.86rem; color:#4b5563; margin:0; line-height:1.55; }
+    .pf-footer { border-top:1px solid var(--border); padding:12px 20px; display:flex; justify-content:space-between; align-items:center; font-size:0.84rem; background:#fafafa; }
+    .pf-footer a { color:var(--primary); font-weight:800; }
+
+    /* 간편 견적 바로가기 폼 스타일 (사례 바로 아래 배치) */
     .quote-box { max-width:680px; margin:0 auto; background:var(--white); border:2px solid var(--primary); border-radius:18px; padding:30px 26px; box-shadow:0 12px 30px rgba(29,78,216,0.08); }
     @media (max-width:600px) { .quote-box { padding:22px 16px; } }
     .q-form { display:flex; flex-direction:column; gap:18px; }
@@ -99,23 +118,6 @@
     .q-copy-btn:hover { background:#1e293b; }
     .q-result-box { display:none; margin-top:16px; background:#f0fdf4; border:1.5px solid #86efac; border-radius:12px; padding:16px; font-size:0.9rem; color:#14532d; white-space:pre-line; line-height:1.6; }
 
-    .filter-bar { display:flex; flex-wrap:wrap; justify-content:center; gap:8px; margin-bottom:24px; }
-    .filter-btn { background:#fff; border:1px solid #d1d5db; color:#374151; padding:8px 16px; border-radius:999px; font-size:0.88rem; font-weight:700; cursor:pointer; transition:all 0.15s; }
-    .filter-btn.active, .filter-btn:hover { background:var(--navy); color:#fff; border-color:var(--navy); }
-    .portfolio-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(310px,1fr)); gap:20px; }
-    .pf-card { background:var(--white); border:1px solid var(--border); border-radius:14px; overflow:hidden; display:flex; flex-direction:column; justify-content:space-between; box-shadow:0 4px 12px rgba(15,23,42,0.03); }
-    .pf-img { position:relative; height:205px; background:#f1f5f9; }
-    .pf-img img { width:100%; height:100%; object-fit:cover; }
-    .pf-region-tag { position:absolute; top:12px; left:12px; background:var(--region-red); color:#fff; font-size:0.78rem; font-weight:800; padding:4px 10px; border-radius:6px; }
-    .pf-cat-tag { position:absolute; top:12px; right:12px; background:rgba(15,23,42,0.82); color:#fff; font-size:0.75rem; font-weight:700; padding:4px 9px; border-radius:6px; }
-    .pf-body { padding:18px 20px; }
-    .pf-title { font-size:1.08rem; font-weight:800; color:var(--navy); margin:0 0 10px; line-height:1.4; }
-    .pf-spec-box { background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:10px 12px; font-size:0.85rem; color:#334155; margin-bottom:10px; }
-    .pf-spec-box div { margin-bottom:4px; }
-    .pf-spec-box div:last-child { margin-bottom:0; }
-    .pf-note { font-size:0.86rem; color:#4b5563; margin:0; line-height:1.55; }
-    .pf-footer { border-top:1px solid var(--border); padding:12px 20px; display:flex; justify-content:space-between; align-items:center; font-size:0.84rem; background:#fafafa; }
-    .pf-footer a { color:var(--primary); font-weight:800; }
     .catalog-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(290px,1fr)); gap:20px; }
     .item-card { background:var(--white); border:1px solid var(--border); border-radius:14px; overflow:hidden; display:flex; flex-direction:column; justify-content:space-between; transition:box-shadow 0.2s,transform 0.2s; }
     .item-card:hover { box-shadow:0 12px 28px rgba(15,23,42,0.08); transform:translateY(-3px); }
@@ -185,13 +187,14 @@
           "https://www.youtube.com/shorts/gV0Mk1SsKeQ"
         ],
         "areaServed": [
+          { "@type": "Place", "name": "가야써니빌" },
           { "@type": "City", "name": "구리시 수택동" },
           { "@type": "City", "name": "구리시 인창동" },
           { "@type": "City", "name": "구리시 토평동" },
           { "@type": "City", "name": "구리시 갈매동" },
           { "@type": "City", "name": "구리시 교문동" },
-          { "@type": "City", "name": "서울특별시 중랑구 망우동" },
           { "@type": "City", "name": "서울특별시 중랑구 면목동" },
+          { "@type": "City", "name": "서울특별시 중랑구 망우동" },
           { "@type": "City", "name": "서울특별시 중랑구 상봉동" },
           { "@type": "City", "name": "경기도 하남시 덕풍동" },
           { "@type": "City", "name": "경기도 하남시 신장동" },
@@ -203,10 +206,10 @@
           { "@type": "AdministrativeArea", "name": "인천광역시 전지역" }
         ],
         "knowsAbout": [
+          "가야써니빌 비디오폰 교체 연동 및 AS 수리",
           "수택동 비디오폰 연동 및 도어락 교체 설치",
           "인창동 비디오폰 연동 및 월패드 배선 개조",
           "망우 면목 상봉 중랑구 비디오폰 교체 수리 및 코맥스 480 시리즈 호환 · 코맥스 77MG 설치",
-          "중랑구 가야써니빌 비디오폰 교체 연동 및 AS 수리",
           "하남 인터폰 비디오폰 설치 수리 및 덕풍동 신장동 창우동 구형 인터폰 교체",
           "디지털 도어락 무파손 개문 및 잠금해제",
           "삼성 SHP-DP930 DP960 DP951 DP710 DP751 DP540 SHS-H530 무파손 개문",
@@ -218,7 +221,7 @@
         "@type": "WebPage",
         "@id": "https://organiccej.github.io/doorlock/#webpage",
         "url": "https://organiccej.github.io/doorlock/",
-        "name": "도어마스터 | 수택동·인창동 비디오폰 연동 · 도어락 교체 · 무파손 개문",
+        "name": "도어마스터 | 수택동·인창동 비디오폰 연동 · 도어락 교체 · 가야써니빌 · 무파손 개문",
         "inLanguage": "ko-KR",
         "primaryImageOfPage": {
           "@type": "ImageObject",
@@ -240,12 +243,11 @@
         <span class="sub-badge">서울경기월패드</span>
       </div>
       <nav aria-label="주요 메뉴" class="nav">
-        <a href="#quick-quote" style="color:#e11d48; font-weight:800;">📋 견적 바로가기</a>
         <a href="#portfolio">실제 시공 사례</a>
+        <a href="#quick-quote" style="color:#e11d48; font-weight:800;">📋 견적 바로가기</a>
         <a href="#catalog">제품 선택</a>
-        <a href="#size-guide">마감판·연동 안내</a>
-        <a href="mangu.html" style="color:#e11d48; font-weight:800;">📍 망우·면목 사례</a>
         <a href="sangbong-gayaville.html" style="color:#0d9488; font-weight:800;">📍 가야써니빌 사례</a>
+        <a href="mangu.html" style="color:#e11d48; font-weight:800;">📍 망우·면목 사례</a>
         <a href="hanam.html" style="color:#1d4ed8; font-weight:800;">📍 하남 인터폰 사례</a>
       </nav>
       <a class="header-call" href="tel:010-7724-5425">📞 010-7724-5425</a>
@@ -253,19 +255,20 @@
   </header>
 
   <main>
+    <!-- 1. 상단 히어로 섹션 -->
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <span class="hero-eyebrow">✨ 구멍 흔적 없는 깔끔한 마감 · 현관문·인터폰 사진 1장이면 견적 완료</span>
+          <span class="hero-eyebrow">✨ 구멍 흔적 없는 깔끔한 마감 · 실제 시공 사례 확인 후 30초 견적 신청</span>
           <h1 class="hero-title"><span class="dynamic-region-prefix"></span>비디오폰 무선 문열림 연동부터<br />도어락 교체·무파손 개문까지 깔끔하게!</h1>
           <p class="hero-desc">
-            구리 <strong>수택동·인창동·갈매동·토평동</strong>과 <strong>중랑구 망우동·면목동·상봉동</strong>, <strong>하남 덕풍동·신장동</strong>을 비롯한 수도권 전지역 출장!
+            구리 <strong>수택동·인창동·갈매동·토평동</strong>과 <strong>면목·망우 가야써니빌·중랑구</strong>, <strong>하남 덕풍동·신장동</strong>을 비롯한 수도권 전지역 출장!
             오래된 비디오폰과 구형 인터폰 교체는 물론, 거실 월패드에서 현관문을 여는 <strong>무선 문열림 연동 셋팅</strong>, <strong>전 브랜드 무파손 개문</strong>, <strong>슬라이드 자동문 번호키</strong>까지 베테랑 엔지니어가 직접 해결합니다.
           </p>
           <div class="btn-group">
+            <a class="btn btn-primary cta-main-btn" href="#portfolio">동네별 실제 시공 사례 먼저 보기 ↓</a>
             <a class="btn btn-quote" href="#quick-quote">📋 30초 견적 바로가기</a>
-            <a class="btn btn-primary cta-main-btn" href="tel:010-7724-5425">📞 <span class="dynamic-region-prefix"></span>전화·문자 바로 상담</a>
-            <a class="btn btn-outline" href="#portfolio">동네별 실제 시공 사례 ↓</a>
+            <a class="btn btn-outline" href="tel:010-7724-5425">📞 전화 바로 상담</a>
           </div>
         </div>
 
@@ -291,15 +294,33 @@
       </div>
     </section>
 
-    <!-- =================================================================
-         [추가된 섹션] 견적 바로가기 5가지 항목 입력 폼
-    ================================================================= -->
-    <section class="sec" id="quick-quote" style="background:#eff6ff; border-bottom:1px solid #dbeafe;">
+    <!-- 2. 실제 시공 사례 포트폴리오 (먼저 보고 신뢰 형성) -->
+    <section class="sec" id="portfolio">
+      <div class="container">
+        <div class="sec-head">
+          <span class="sec-kicker">REAL WORK PORTFOLIO</span>
+          <h2 class="sec-title">동네별 실제 시공 포트폴리오 &amp; 작업 내역</h2>
+          <p class="sec-sub">현장 배선 상태부터 교체한 모델명, 문열림 연동 셋팅 내용까지 투명하게 기록합니다.</p>
+        </div>
+
+        <div class="filter-bar" id="pf-filters">
+          <button class="filter-btn active" data-filter="all" type="button">전체 시공 사례</button>
+          <button class="filter-btn" data-filter="interlock" type="button">인터폰 · 비디오폰 교체 · 연동</button>
+          <button class="filter-btn" data-filter="doorlock" type="button">도어락 교체 · 무파손 개문</button>
+          <button class="filter-btn" data-filter="autodoor" type="button">슬라이드 자동문 번호키</button>
+        </div>
+
+        <div class="portfolio-grid" id="portfolio-list"></div>
+      </div>
+    </section>
+
+    <!-- 3. 실제 시공 사례 바로 아래에 배치된 '30초 간편 견적 바로가기' -->
+    <section class="sec" id="quick-quote" style="background:#eff6ff; border-top:1px solid #dbeafe; border-bottom:1px solid #dbeafe;">
       <div class="container">
         <div class="sec-head" style="margin-bottom:24px;">
           <span class="sec-kicker">30-SECOND INSTANT QUOTE</span>
-          <h2 class="sec-title">📋 비디오폰·도어락 간편 견적 바로가기</h2>
-          <p class="sec-sub">아래 5가지 내용을 적어 보내주시면 우리 집 호환 모델과 출장비 포함 확정 견적을 바로 안내해 드립니다.</p>
+          <h2 class="sec-title">📋 사례 확인 후 우리 집 견적 바로 알아보기</h2>
+          <p class="sec-sub">아래 5가지 항목만 적어 보내주시면 우리 집 배선 호환 모델과 출장비 포함 확정 견적을 바로 안내해 드립니다.</p>
         </div>
 
         <div class="quote-box">
@@ -340,7 +361,7 @@
             <!-- 4. 사시는 지역 -->
             <div class="q-group">
               <label class="q-label" for="q-region">4. 사시는 지역 적어주세요 <span class="req">*</span></label>
-              <input class="q-input" type="text" id="q-region" placeholder="예) 구리 수택동, 중랑구 망우동, 하남 덕풍동 등" required />
+              <input class="q-input" type="text" id="q-region" placeholder="예) 구리 수택동, 면목동 가야써니빌, 중랑구 망우동, 하남 덕풍동 등" required />
             </div>
 
             <!-- 5. 추가 도어락 연동 희망 여부 -->
@@ -371,25 +392,7 @@
       </div>
     </section>
 
-    <section class="sec" id="portfolio">
-      <div class="container">
-        <div class="sec-head">
-          <span class="sec-kicker">REAL WORK PORTFOLIO</span>
-          <h2 class="sec-title">동네별 실제 시공 포트폴리오 &amp; 작업 내역</h2>
-          <p class="sec-sub">현장 배선 상태부터 교체한 모델명, 문열림 연동 셋팅 내용까지 투명하게 기록합니다.</p>
-        </div>
-
-        <div class="filter-bar" id="pf-filters">
-          <button class="filter-btn active" data-filter="all" type="button">전체 시공 사례</button>
-          <button class="filter-btn" data-filter="interlock" type="button">인터폰 · 비디오폰 교체 · 연동</button>
-          <button class="filter-btn" data-filter="doorlock" type="button">도어락 교체 · 무파손 개문</button>
-          <button class="filter-btn" data-filter="autodoor" type="button">슬라이드 자동문 번호키</button>
-        </div>
-
-        <div class="portfolio-grid" id="portfolio-list"></div>
-      </div>
-    </section>
-
+    <!-- 4. 제품 선택 섹션 -->
     <section class="sec sec-white" id="catalog">
       <div class="container">
         <div class="sec-head">
@@ -514,7 +517,7 @@
           <div>
             <h3>📐 구형 비디오폰 교체 시 '벽면 타공 사이즈' 걱정 마세요</h3>
             <p>
-              구리 수택동·인창동·토평동 및 중랑구 망우동·면목동·상봉동, 하남 덕풍동·신장동 등 구축 아파트·빌라에 매립된 대형 인터폰을 떼어내면 벽면에 큰 네모 구멍이 남습니다.
+              구리 수택동·인창동·토평동 및 면목·망우 가야써니빌·중랑구, 하남 덕풍동·신장동 등 구축 아파트·빌라에 매립된 대형 인터폰을 떼어내면 벽면에 큰 네모 구멍이 남습니다.
               도어마스터는 현장 매립함 규격에 딱 맞는 <strong>전용 아크릴·스틸 마감판(보강판)</strong>을 준비해 벽지 훼손 없이 새 제품처럼 깔끔하게 덮어드립니다.
             </p>
             <p style="font-size:0.86rem; color:var(--primary); font-weight:700; margin:0;">
@@ -647,16 +650,16 @@
         <div class="sec-head">
           <span class="sec-kicker">LOCAL SEO &amp; SERVICE AREAS</span>
           <h2 class="sec-title">동네별 실제 시공 사례 및 맞춤 출장 안내</h2>
-          <p class="sec-sub">수택동·인창동·갈매동·토평동과 중랑구 망우동·면목동·상봉동·하남·남양주·서울·경기·인천 출장 지원</p>
+          <p class="sec-sub">수택동·인창동·갈매동·토평동과 면목·망우 가야써니빌·중랑구·하남·남양주·서울·경기·인천 출장 지원</p>
         </div>
 
         <div class="seo-dong-box">
           <h3>📍 자주 찾으시는 동네별 비디오폰 연동 · 도어락 시공 바로가기</h3>
           <nav aria-label="동네별 SEO 직통 링크" class="chip-wrap">
-            <a class="region-chip" href="uijeongbu.html" style="border-color:#0d9488; color:#0d9488; background:#f0fdfa;">📍 의정부 민락·신곡·호원·의정부동 비디오폰·도어락 연동</a>
-            <a class="region-chip" href="hanam.html" style="border-color:#1d4ed8; color:#1d4ed8; background:#eff6ff;">📍 하남 덕풍·신장·창우·미사 인터폰·비디오폰 설치 수리</a>
+            <a class="region-chip" href="sangbong-gayaville.html" style="border-color:#0d9488; color:#0d9488; background:#f0fdfa;">📍 가야써니빌 비디오폰 교체·도어락 연동·AS (면목·망우·상봉)</a>
             <a class="region-chip" href="mangu.html" style="border-color:#e11d48; color:#e11d48; background:#fff1f2;">📍 망우·면목·중랑구 비디오폰 교체·코맥스 77MG 연동</a>
-            <a class="region-chip" href="sangbong-gayaville.html" style="border-color:#0d9488; color:#0d9488; background:#f0fdfa;">📍 망우·면목·상봉 가야써니빌 비디오폰 교체·연동·AS</a>
+            <a class="region-chip" href="hanam.html" style="border-color:#1d4ed8; color:#1d4ed8; background:#eff6ff;">📍 하남 덕풍·신장·창우·미사 인터폰·비디오폰 설치 수리</a>
+            <a class="region-chip" href="uijeongbu.html" style="border-color:#0d9488; color:#0d9488; background:#f0fdfa;">📍 의정부 민락·신곡·호원·의정부동 비디오폰·도어락 연동</a>
             <a class="region-chip" data-region="구리 수택동" href="?region=구리%20수택동">수택동 비디오폰 연동</a>
             <a class="region-chip" data-region="구리 인창동" href="?region=구리%20인창동">인창동 비디오폰 연동</a>
             <a class="region-chip" data-region="구리 토평동" href="?region=구리%20토평동">토평동 비디오폰·도어락</a>
@@ -672,7 +675,7 @@
 
           <div class="dong-seo-text">
             <strong>· 구리시 전 동 출장 안내:</strong> 구리시 수택동 비디오폰 연동, 인창동 비디오폰 연동, 토평동 비디오폰 교체, 갈매동 월패드 문열림 연동, 교문동 디지털 도어락 교체 및 무파손 개문, 동구동·아천동·사노동 상가 슬라이드 자동문 번호키 설치<br />
-            <strong>· 중랑구·하남시·남양주시 출장 안내:</strong> <a href="mangu.html" style="color:var(--primary); font-weight:700; text-decoration:underline;">서울 중랑구 망우동·면목동 비디오폰 교체 수리(코맥스 480 시리즈 호환 · 코맥스 77MG · 한창→경동나비엔 호환)</a> / <a href="sangbong-gayaville.html" style="color:var(--primary); font-weight:700; text-decoration:underline;">망우·면목·상봉 가야써니빌 비디오폰 교체·연동·AS</a> / <a href="hanam.html" style="color:var(--primary); font-weight:700; text-decoration:underline;">하남시 덕풍동·신장동·천현동·창우동·풍산동·망월동·미사동·감일동·감북동·학암동 인터폰·비디오폰 설치 수리</a> / 남양주 다산동·별내동·도농동·지금동·퇴계원읍·진접읍·오남읍·와부읍(덕소)·평내동·호평동<br />
+            <strong>· 중랑구·하남시·남양주시 출장 안내:</strong> <a href="sangbong-gayaville.html" style="color:var(--primary); font-weight:700; text-decoration:underline;">가야써니빌 비디오폰 교체·도어락 연동·AS (면목동·망우동·상봉동)</a> / <a href="mangu.html" style="color:var(--primary); font-weight:700; text-decoration:underline;">서울 중랑구 망우동·면목동 비디오폰 교체 수리(코맥스 480 시리즈 호환 · 코맥스 77MG · 한창→경동나비엔 호환)</a> / <a href="hanam.html" style="color:var(--primary); font-weight:700; text-decoration:underline;">하남시 덕풍동·신장동·천현동·창우동·풍산동·망월동·미사동·감일동·감북동·학암동 인터폰·비디오폰 설치 수리</a> / 남양주 다산동·별내동·도농동·지금동·퇴계원읍·진접읍·오남읍·와부읍(덕소)·평내동·호평동<br />
             <strong>· 서울·경기도·인천 전지역 출장 안내:</strong> 서울 25개 자치구(중랑·노원·광진·성동·동대문·강동·송파·강남·서초·강서·양천·구로·영등포·마포 등), 경기(성남·분당·용인·수원·화성·광명·부천·안양·시흥·고양·김포·의정부), 인천(서구·계양·부평·남동·연수·미추홀) 당일 및 주말·야간 출장
           </div>
         </div>
@@ -692,7 +695,7 @@
 
   <footer style="background:#fff; border-top:1px solid var(--border); padding:26px 20px; text-align:center; font-size:0.88rem; color:var(--muted);">
     <p style="margin:0 0 6px;"><strong>도어마스터 · 서울경기월패드</strong> (마이홈리페어랩 출입보안팀) | 대표 상담: <a href="tel:010-7724-5425" style="color:var(--primary); font-weight:700;">010-7724-5425</a></p>
-    <p style="margin:0;">수택동·인창동 비디오폰 연동 · 망우·면목 코맥스 480·77MG 교체 · 하남 인터폰·비디오폰 설치 수리 · 전 브랜드 무파손 개문</p>
+    <p style="margin:0;">수택동·인창동 비디오폰 연동 · 가야써니빌 비디오폰 교체 · 망우·면목 코맥스 480·77MG · 하남 인터폰 설치 수리 · 전 브랜드 무파손 개문</p>
   </footer>
 
   <script>
@@ -751,9 +754,20 @@
     }
 
     // =========================================================================
-    // 기존 포트폴리오 및 지역명 자동 변환 스크립트
+    // 포트폴리오 데이터 (가야써니빌 SEO 최상단 반영 포함)
     // =========================================================================
     const PORTFOLIO_DATA = [
+      {
+        category: "interlock",
+        categoryName: "가야써니빌 비디오폰·연동",
+        region: "면목·망우 가야써니빌",
+        title: "가야써니빌 비디오폰 교체 및 공동현관 로비폰·현관 도어락 무선 문열림 연동 (면목동·망우·상봉)",
+        image: "assets/link_step2_videophone.jpg",
+        beforeInfo: "가야써니빌 기존 구형 비디오폰 화면 불량·통화 잡음 및 공동현관 로비폰·도어락 문열림 불가",
+        workInfo: "가야써니빌 전용 마감판 시공 + 호환형 신형 비디오폰 교체 + 로비폰 및 현관 도어락 무선 연동 완료",
+        checkTip: "면목동·망우동·상봉동 가야써니빌 단지 배선 호환 기종 100% 매칭 및 부분 수리 AS 지원 (상세: sangbong-gayaville.html)",
+        detailUrl: "sangbong-gayaville.html"
+      },
       {
         category: "interlock",
         categoryName: "비디오폰 교체·도어락 연동",
@@ -816,17 +830,6 @@
         beforeInfo: "외부인 무단 출입 방지를 위해 자동문 비밀번호·카드키 출입통제 시스템 필요",
         workInfo: "자동문 컨트롤러 접점 연결 + 외부 방수형 번호키(비밀번호·RF카드) + 내부 무선 터치스위치 시공",
         checkTip: "영업시간 상시 개방 모드와 퇴근 후 외부 번호키 전용 잠금 모드 전환법 안내 완료"
-      },
-      {
-        category: "interlock",
-        categoryName: "비디오폰 교체·연동·AS",
-        region: "망우·면목·상봉 가야써니빌",
-        title: "중랑구 가야써니빌 노후 비디오폰 교체 및 공동현관 로비폰·도어락 연동",
-        image: "assets/link_step2_videophone.jpg",
-        beforeInfo: "구형 인터폰 화면 불량·통화 잡음 및 공동현관 로비폰·도어락 문열림 작동 불가",
-        workInfo: "기존 기기 철거 후 전용 마감판 + 신형 비디오폰·도어카메라 교체 및 로비폰·도어락 연동 완료",
-        checkTip: "망우동·면목동·상봉동 빌라·아파트 배선 호환 기종 매칭 및 부분 수리 AS 지원 (상세: sangbong-gayaville.html)",
-        detailUrl: "sangbong-gayaville.html"
       }
     ];
 
