@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://organiccej.github.io/sitemap.xml
+Sitemap: https://organiccej.github.io/doorlock/sitemap.xml
