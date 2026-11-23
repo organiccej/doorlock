@@ -56,33 +56,82 @@
         "telephone": "010-7724-5425",
         "image": [
           "https://organiccej.github.io/doorlock/assets/doorlock_after.jpg",
-          "https://organiccej.github.io/doorlock/assets/261123-songpa-munjeong-videophone-3.jpg",
           "https://organiccej.github.io/doorlock/assets/link_step2_videophone.jpg"
         ]
       }
     ]
   }
   </script>
+
+  <!-- 4. 기존 양식 유지 + 모바일 화면 최적화 CSS -->
+  <style>
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Malgun Gothic",sans-serif; background:#f8fafc; color:#1e293b; line-height:1.6; word-break:keep-all; overflow-x:hidden; }
+    .container { max-width:1040px; margin:0 auto; padding:20px 14px 48px; }
+    .top-bar { display:flex; justify-content:space-between; align-items:center; background:#fff; padding:12px 18px; border-bottom:1px solid #e2e8f0; position:sticky; top:0; z-index:10; }
+    .top-bar a { font-weight:800; color:#1d4ed8; text-decoration:none; font-size:0.9rem; }
+    .head { text-align:center; margin:16px 0 26px; }
+    .head h1 { font-size:clamp(1.3rem, 3.2vw, 1.72rem); font-weight:900; color:#0f172a; margin:0 0 8px; line-height:1.35; }
+    .head p { color:#64748b; margin:0; font-size:0.88rem; }
+
+    /* 아카이브 개별 사례 카드 */
+    .arc-card { background:#fff; border:1px solid #e2e8f0; border-radius:16px; padding:18px; margin-bottom:20px; box-shadow:0 4px 12px rgba(15,23,42,0.03); }
+    .arc-meta { display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-bottom:10px; font-size:0.76rem; font-weight:800; }
+    .arc-region { background:#fff1f2; color:#e11d48; padding:4px 9px; border-radius:6px; }
+    .arc-keyword { background:#eff6ff; color:#1d4ed8; padding:4px 9px; border-radius:6px; line-height:1.45; word-break:break-all; }
+    .arc-date { color:#64748b; margin-left:auto; }
+    .arc-card h2 { font-size:clamp(1.02rem, 2.5vw, 1.18rem); font-weight:900; color:#0f172a; margin:0 0 12px; line-height:1.4; }
+    
+    /* 3장 사진 그리드 (PC 및 모바일 모두 한눈에 보기 편한 컴팩트 3열 비율) */
+    .arc-photos-3 { display:grid; grid-template-columns:repeat(3, 1fr); gap:10px; margin-bottom:14px; }
+    .arc-photos-3 figure { margin:0; border-radius:10px; overflow:hidden; border:1px solid #e2e8f0; background:#f1f5f9; }
+    .arc-photos-3 img { width:100%; height:175px; object-fit:cover; display:block; }
+    .arc-photos-3 figcaption { padding:6px 4px; font-size:0.76rem; font-weight:800; color:#334155; text-align:center; background:#f8fafc; border-top:1px solid #e2e8f0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .cap-step3 { background:#eff6ff !important; color:#1d4ed8 !important; }
+
+    /* 모바일 화면 전용 컴팩트 조정 (가로 깨짐 방지) */
+    @media (max-width: 640px) {
+      .container { padding:14px 10px 40px; }
+      .arc-card { padding:14px 12px; }
+      .arc-photos-3 { gap:6px; }
+      .arc-photos-3 img { height:100px; }
+      .arc-photos-3 figcaption { font-size:0.66rem; padding:4px 2px; }
+      .arc-date { margin-left:0; width:100%; }
+    }
+
+    .arc-desc { font-size:0.89rem; color:#334155; background:#f8fafc; padding:13px 14px; border-radius:10px; margin:0 0 12px; line-height:1.65; }
+    .arc-cta { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:8px; font-size:0.84rem; font-weight:800; }
+    .arc-cta a { color:#e11d48; text-decoration:none; }
+
+    /* 하단 SEO 통합 시공 가이드 & 체크카드 그리드 */
+    .seo-bottom-box { margin-top:36px; padding:28px 18px; background:#ffffff; border:1px solid #e2e8f0; border-radius:18px; box-shadow:0 4px 16px rgba(15,23,42,0.03); }
+    .seo-bottom-head { text-align:center; max-width:740px; margin:0 auto 24px; }
+    .seo-bottom-badge { display:inline-block; font-size:0.8rem; font-weight:800; color:#1d4ed8; background:#eff6ff; padding:4px 12px; border-radius:999px; margin-bottom:10px; }
+    .seo-bottom-head h2 { font-size:clamp(1.22rem, 2.8vw, 1.52rem); font-weight:900; color:#0f172a; margin:0 0 10px; line-height:1.35; }
+    .seo-bottom-head p { font-size:0.9rem; color:#475569; margin:0; line-height:1.7; }
+    .seo-check-grid { display:grid; grid-template-columns:repeat(2, 1fr); gap:10px; }
+    @media (max-width: 680px) { .seo-check-grid { grid-template-columns:1fr; } }
+    .seo-check-item { display:flex; align-items:center; gap:10px; background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:13px 15px; font-size:0.9rem; font-weight:800; color:#0f172a; }
+    .seo-check-icon { color:#16a34a; font-weight:900; font-size:1.05rem; flex-shrink:0; }
+  </style>
 </head>
-  
 <body>
 
   <div class="top-bar">
     <a href="index.html">← 메인 페이지로 돌아가기</a>
-    <a href="index.html#quick-quote" style="background:#e11d48; color:#fff; padding:7px 14px; border-radius:8px;">📋 30초 견적 바로가기</a>
+    <a href="index.html#quick-quote" style="background:#e11d48; color:#fff; padding:7px 13px; border-radius:8px;">📋 30초 견적 바로가기</a>
   </div>
 
   <div class="container">
     <div class="head">
-      <h1>지역별 실제 시공 사례 아카이브 (전·과정·후 3장 기록)</h1>
-      <p>송파 · 중랑(면목·망우·상봉) · 구리 · 남양주 · 하남 · 의정부 · 서울 · 경기 · 인천 출장 시공 일지</p>
+      <h1>비디오폰·월패드 교체 및 도어락 연동 전문업체 · 출장비 포함 투명 견적</h1>
+      <p>구형 2선식·4선식 배선 개조 · 전용 마감판 깔끔 시공 · 송파·강동·중랑·구리·남양주·하남·의정부 당일 출장</p>
     </div>
 
     <!-- =================================================================
          ★ 매일 사진 3장 올린 뒤 이 바로 아래에 사례 블록을 붙여넣으세요 ★
     ================================================================= -->
 
-    <!-- [2026.11.23 송파구 문정동 비디오폰·월패드 교체 및 도어락 연동 사례] -->
     <!-- [2026.11.24 강동구 천호동·암사동 비디오폰·월패드 교체 및 도어락 연동 사례] -->
     <article class="arc-card">
       <div class="arc-meta">
@@ -93,15 +142,15 @@
       <h2>강동구 천호동·암사동 비디오폰 교체 수리 및 월패드 설치 · 도어락 문열림 연동 (코맥스·코콤·삼성 호환)</h2>
       <div class="arc-photos-3">
         <figure>
-          <img src="assets/261123-gangdong-cheonho-amsa-videophone-1.jpg" alt="강동구 천호동 암사동 구형 비디오폰 월패드 교체 수리 전 현장 사진" loading="lazy" />
+          <img src="assets/261124-gangdong-cheonho-amsa-videophone-1.jpg" alt="강동구 천호동 암사동 구형 비디오폰 월패드 교체 수리 전 현장 사진" loading="lazy" />
           <figcaption>1. 시공 전 · 배선 진단</figcaption>
         </figure>
         <figure>
-          <img src="assets/261123-gangdong-cheonho-amsa-videophone-2.jpg" alt="강동구 천호동 암사동 비디오폰 전용 마감판 시공 및 2선식 4선식 배선 개조 과정" loading="lazy" />
+          <img src="assets/261124-gangdong-cheonho-amsa-videophone-2.jpg" alt="강동구 천호동 암사동 비디오폰 전용 마감판 시공 및 2선식 4선식 배선 개조 과정" loading="lazy" />
           <figcaption>2. 시공 과정 · 연동 셋팅</figcaption>
         </figure>
         <figure>
-          <img src="assets/261123-gangdong-cheonho-amsa-videophone-3.jpg" alt="강동구 천호동 암사동 신형 비디오폰 교체 설치 및 현관 도어락 문열림 연동 완료" loading="lazy" />
+          <img src="assets/261124-gangdong-cheonho-amsa-videophone-3.jpg" alt="강동구 천호동 암사동 신형 비디오폰 교체 설치 및 현관 도어락 문열림 연동 완료" loading="lazy" />
           <figcaption class="cap-step3">3. 시공 후 · 연동 완료</figcaption>
         </figure>
       </div>
@@ -115,6 +164,8 @@
         <a href="index.html#quick-quote">동일 시공 견적 신청하기 →</a>
       </div>
     </article>
+
+    <!-- [2026.11.23 송파구 문정동 비디오폰·월패드 교체 및 도어락 연동 사례] -->
     <article class="arc-card">
       <div class="arc-meta">
         <span class="arc-region">📍 송파구 문정동 · 잠실·가락·장지·송파 전지역</span>
@@ -124,15 +175,15 @@
       <h2>송파구 문정동·잠실 비디오폰 교체 수리 및 월패드 연동 설치 · 코맥스·코콤·삼성 호환 시공</h2>
       <div class="arc-photos-3">
         <figure>
-          <img src="assets/261123-songpa-munjeong-videophone-1.jpg" alt="송파구 문정동 잠실 구형 비디오폰 월패드 교체 수리 전 현장 사진" loading="lazy" />
+          <img src="assets/261124-songpa-munjeong-videophone-1.jpg" alt="송파구 문정동 잠실 구형 비디오폰 월패드 교체 수리 전 현장 사진" loading="lazy" />
           <figcaption>1. 시공 전 · 배선 진단</figcaption>
         </figure>
         <figure>
-          <img src="assets/261123-songpa-munjeong-videophone-2.jpg" alt="송파구 문정동 비디오폰 전용 마감판 시공 및 코맥스 코콤 삼성 호환 연동 작업" loading="lazy" />
+          <img src="assets/261124-songpa-munjeong-videophone-2.jpg" alt="송파구 문정동 비디오폰 전용 마감판 시공 및 코맥스 코콤 삼성 호환 연동 작업" loading="lazy" />
           <figcaption>2. 시공 과정 · 연동 셋팅</figcaption>
         </figure>
         <figure>
-          <img src="assets/261123-songpa-munjeong-videophone-3.jpg" alt="송파구 문정동 신형 비디오폰 교체 설치 및 현관 도어락 문열림 연동 완료" loading="lazy" />
+          <img src="assets/261124-songpa-munjeong-videophone-3.jpg" alt="송파구 문정동 신형 비디오폰 교체 설치 및 현관 도어락 문열림 연동 완료" loading="lazy" />
           <figcaption class="cap-step3">3. 시공 후 · 연동 완료</figcaption>
         </figure>
       </div>
@@ -189,7 +240,7 @@
         <h2>왜 많은 고객님들이 사설 업체가 아닌<br />'도어마스터'를 찾으실까요?</h2>
         <p>
           단순 신제품 교체를 넘어 <strong>구형 아날로그 2선식·4선식 배선 개조</strong>부터 <strong>디지털 BUS 통신 호환, 1층 공동현관 로비폰·경비실 통화 복구, 현관 도어락 무선 문열림 연동</strong>까지 현장 배선에 맞춰 정밀 시공합니다.<br />
-          서울(송파·중랑·강동·노원·광진 등)·구리·남양주·하남·의정부·경기·인천 어디든 사진 한 장이면 호환 모델과 확정 견적을 바로 안내해 드립니다.
+          서울(송파·강동·중랑·노원·광진 등)·구리·남양주·하남·의정부·경기·인천 어디든 사진 한 장이면 호환 모델과 확정 견적을 바로 안내해 드립니다.
         </p>
       </div>
 
@@ -210,7 +261,7 @@
         <div class="seo-check-item"><span class="seo-check-icon">✓</span><span>전세집 무타공 보조키 · 상가 유리문 · 샷시문 설치</span></div>
         <div class="seo-check-item"><span class="seo-check-icon">✓</span><span>상가 · 사무실 슬라이드 자동문 출입통제 번호키 연동</span></div>
         <div class="seo-check-item"><span class="seo-check-icon">✓</span><span>빌라 · 다세대 · 오피스텔 · 아파트 전 세대 배선 진단</span></div>
-        <div class="seo-check-item"><span class="seo-check-icon">✓</span><span>송파(문정·잠실·가락) · 중랑(면목·망우·가야써니빌) 출장</span></div>
+        <div class="seo-check-item"><span class="seo-check-icon">✓</span><span>송파(문정·잠실) · 강동(천호·암사) · 중랑(면목·가야써니빌)</span></div>
         <div class="seo-check-item"><span class="seo-check-icon">✓</span><span>구리(수택·인창·갈매) · 남양주(다산·별내) · 하남 · 의정부</span></div>
       </div>
 
